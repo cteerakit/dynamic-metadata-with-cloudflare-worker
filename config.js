@@ -1,13 +1,9 @@
 export const config = {
-  domainSource: "https://f69a71f6-9fd8-443b-a040-78beb5d404d4.weweb-preview.io", // Your WeWeb app preview link
+  domainSource: "https://www.telepath.work", // Your WeWeb app preview link
   patterns: [
       {
-          pattern: "/event/[^/]+",
-          metaDataEndpoint: "https://xeo6-2sgh-ehgj.n7.xano.io/api:8wD10mRd/event/{id}/meta"
-      },
-      {
-          pattern: "/team/profile/[^/]+",
-          metaDataEndpoint: "https://xeo6-2sgh-ehgj.n7.xano.io/api:LjwxezTv/team/profile/{profile_id}/meta"
+          pattern: "/companies/[^/]+",
+          metaDataEndpoint: "https://mzthkqrxpvcmyhbaydls.supabase.co/rest/v1/company_meta?id=eq.{id}&select=title,description,image,keywords&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im16dGhrcXJ4cHZjbXloYmF5ZGxzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDcyMjg2NDgsImV4cCI6MjAyMjgwNDY0OH0.FcXziCUfckCC0520HRZLjDzjwSqpLqTIJd5D6qn3qIU"
       }
       // Add more patterns and their metadata endpoints as needed
   ]
